@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 515.0, 164.0, 868.0, 578.0 ],
+		"rect" : [ 138.0, 117.0, 873.0, 588.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 667.000000000000114, 204.500000000000114, 121.300000000000068, 20.0 ],
+					"patching_rect" : [ 671.0, 204.500000000000114, 121.300000000000068, 20.0 ],
 					"text" : "generate frequencies"
 				}
 
@@ -535,9 +535,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 13.0, 78.0, 646.0, 89.0 ],
+					"patching_rect" : [ 13.0, 78.0, 652.000000000000114, 89.0 ],
 					"style" : "helpfile_label",
-					"text" : "A multi-channel Max-native DSP abstraction for synchronizing n-number of oscillators (sine waves) using the Kuramoto model. The model describes the synchronization behavior of a system of interacting oscillators.\n\nSpecify the number of oscillators as the object argument and define their states (on/off) and frequencies as mc.sig~ inputs. Toggle sine waves at arbitrary times and commence the synchronization process by providing a k-value (coupling constant) greater than 0. The higher this k-value, the quicker the synchronization process occurs."
+					"text" : "A multi-channel and Max-native DSP abstraction for synchronizing n-number of oscillators (sine waves) using the Kuramoto model. The model describes the synchronization behavior of a system of interacting oscillators.\n\nSpecify the number of oscillators as the object argument and define their states (on/off) and frequencies as mc.sig~ inputs. Toggle sine waves at arbitrary times and commence the synchronization process by providing a k-value (coupling constant) greater than 0. The higher this k-value, the quicker the synchronization process occurs."
 				}
 
 			}
@@ -679,7 +679,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "multichannelsignal" ],
 									"patching_rect" : [ 58.0, 12.0, 30.0, 30.0 ]
 								}
 
@@ -1028,7 +1028,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "multichannelsignal" ],
 					"patching_rect" : [ 388.0, 418.0, 183.0, 22.0 ],
 					"text" : "alx.ksync 16"
 				}
@@ -1117,8 +1117,22 @@
 			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "alx.ksync.maxpat",
+				"bootpath" : "~/Documents/GitHub/alx.max/src/alx.ksync",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "jit.pass.mxe64",
 				"type" : "mx64"
+			}
+, 			{
+				"name" : "ksync_node.gendsp",
+				"bootpath" : "~/Documents/GitHub/alx.max/src/alx.ksync",
+				"patcherrelativepath" : ".",
+				"type" : "gDSP",
+				"implicit" : 1
 			}
  ],
 		"autosave" : 0
