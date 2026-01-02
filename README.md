@@ -1,10 +1,10 @@
-1. [aleks.ksync](#aleksksync) - Synchronize oscillators with the Kuramoto model
-2. [aleks.gl.spectral](#aleksglspectral) - Print real-time motiongrams (spectral mean images) using openGL jitter.
-3. [aleks.multiplot.js](#aleksmultiplotjs) - A custom plotting tool for visualizing lists in Max.
-4. [aleks.scaleui](#aleksscaleui) - Make the patching window automatically adjust Zoom according to the window size.
-5. [aleks.multislider](#aleksmultislider) - A modified and customizable version of Max's multislider object.
+1. [alx.ksync](#alxksync) - Synchronize oscillators with the Kuramoto model
+2. [alx.gl.spectral](#alxglspectral) - Print real-time motiongrams (spectral mean images) using openGL jitter.
+3. [alx.multiplot.js](#alxmultiplotjs) - A custom plotting tool for visualizing lists in Max.
+4. [alx.scaleui](#alxscaleui) - Make the patching window automatically adjust Zoom according to the window size.
+5. [alx.multislider](#alxmultislider) - A modified and customizable version of Max's multislider object.
 
-# aleks.ksync
+# alx.ksync
 
 **Type:** Abstraction
 
@@ -24,11 +24,13 @@ Specify the number of oscillators as the object argument and define their states
 
 - [Balint Laczko](https://github.com/balintlaczko)
 
-# aleks.gl.spectral
+# alx.gl.spectral
 
 Generate/print real-time motiongrams and videograms (spectral mean images) with openGL jitter. These images are temporal representations of motion in videos over time.
 
 Any video source is fine. You can add different noise reduction filters, adjust the brightness, and configure the printing rate. The abstraction uses (and starts) the audio thread for precision printing and timing. You can also specify if you want to conduct the main vector mean calculations on the GPU (via [jit.gl.pix]) or CPU (via [xray.jit.mean]). The CPU version is the default and what's generally recommended (this is also documented by [the Cyling74 website](https://cycling74.com/tutorials/best-practices-in-jitter-part-1)).
+
+Also, use high performance power settings on you machine for best results.
 
 <p align="left">
  <img src="img/spectral.png" width=600>
@@ -49,13 +51,13 @@ Any video source is fine. You can add different noise reduction filters, adjust 
 
 XRAY external package
 
-# aleks.multiplot.js
+# alx.multiplot.js
 
 **Type:** jsui file
 
 An easy-to-use dynamic plotting tool for visualizing lists of numbers in Max. The object is an upgraded and enhanced version of Timothy Place's `plot.js` built with the [jsui] Max object.
 
-To use it, create a [jsui] object in Max and load it with the `aleks.multiplot.js` file.
+To use it, create a [jsui] object in Max and load it with the `alx.multiplot.js` file.
 
 The interface can plot an arbitrary number of lists and will render the content of each list (the number values) on the Y-axis and the list indices on the X-axis. You can also design the plotting interface in many cool ways, assign a custom color to your lists, add axis titles and labels, and write the data directly to a Max dictionary.
 
@@ -67,7 +69,7 @@ The interface can plot an arbitrary number of lists and will render the content 
 
 - [Hardanger Fiddle Performance Analysis](https://github.com/aleksati/hardanger-fiddle-performance-analysis)
 
-# aleks.scaleui
+# alx.scaleui
 
 **Type:** Abstraction
 
@@ -79,7 +81,7 @@ You can choose from two scaling philosophies; "continuous" or "ondemand". The co
  <img src="img/scaleui.png" width=600>
 </p>
 
-# aleks.multislider.js
+# alx.multislider.js
 
 **Type:** jsui file
 

@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 2,
+			"minor" : 6,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -144,8 +144,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 2,
+							"minor" : 6,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -403,8 +403,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 2,
+							"minor" : 6,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -720,8 +720,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 2,
+							"minor" : 6,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -897,8 +897,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 2,
+							"minor" : 6,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1173,6 +1173,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
 							"parameter_longname" : "number[1]",
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "number[1]",
 							"parameter_type" : 3
 						}
@@ -1190,8 +1191,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 102.0, 483.0, 94.0, 22.0 ],
-					"text" : "aleks.ksync 256"
+					"patching_rect" : [ 102.0, 483.0, 92.0, 22.0 ],
+					"text" : "alx.ksync 256"
 				}
 
 			}
@@ -1448,8 +1449,8 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "aleks.ksync.maxpat",
-				"bootpath" : "~/GitHub/aleks.max/src/aleks.ksync",
+				"name" : "alx.ksync.maxpat",
+				"bootpath" : "~/Documents/GitHub/alx.max/src/aleks.ksync",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1460,7 +1461,7 @@
 			}
 , 			{
 				"name" : "ksync_node.gendsp",
-				"bootpath" : "~/GitHub/aleks.max/src/aleks.ksync",
+				"bootpath" : "~/Documents/GitHub/alx.max/src/aleks.ksync",
 				"patcherrelativepath" : ".",
 				"type" : "gDSP",
 				"implicit" : 1

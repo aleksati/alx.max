@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 6,
+			"minor" : 6,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 149.0, 86.0, 868.0, 578.0 ],
+		"rect" : [ 515.0, 164.0, 868.0, 578.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,7 +45,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 667.000000000000114, 204.500000000000114, 121.300000000000068, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "generate frequencies"
 				}
 
@@ -72,8 +71,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -260,7 +259,6 @@
 					}
 ,
 					"patching_rect" : [ 638.0, 239.0, 194.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -332,8 +330,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -526,7 +524,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 13.0, 12.0, 246.0, 64.0 ],
-					"text" : "aleks.ksync"
+					"text" : "alx.ksync"
 				}
 
 			}
@@ -566,8 +564,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -681,7 +679,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "multichannelsignal" ],
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 58.0, 12.0, 30.0, 30.0 ]
 								}
 
@@ -1030,9 +1028,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 1,
-					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 388.0, 418.0, 237.0, 22.0 ],
-					"text" : "aleks.ksync 16"
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 388.0, 418.0, 183.0, 22.0 ],
+					"text" : "alx.ksync 16"
 				}
 
 			}
@@ -1119,22 +1117,8 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "aleks.ksync.maxpat",
-				"bootpath" : "~/Documents/GitHub/aleks.max/src/aleks.ksync/mc version multi-freq",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "jit.pass.mxe64",
 				"type" : "mx64"
-			}
-, 			{
-				"name" : "ksync_node.gendsp",
-				"bootpath" : "~/Documents/GitHub/aleks.max/src/aleks.ksync/mc version multi-freq",
-				"patcherrelativepath" : ".",
-				"type" : "gDSP",
-				"implicit" : 1
 			}
  ],
 		"autosave" : 0
