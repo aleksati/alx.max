@@ -1,7 +1,7 @@
 1. [alx.ksync](#alxksync) - Synchronize an abritrary number of oscillators using the Kuramoto model (With Max MC support)
 2. [alx.gl.spectral](#alxglspectral) - Print real-time motiongrams (spectral mean images) using openGL jitter. Both CPU and GPU versions included.
 3. [alx.multiplot.js](#alxmultiplotjs) - A custom plotting tool for visualizing lists in Max.
-4. [alx.scaleui](#alxscaleui) - Make the patching window automatically adjust Zoom according to the window size.
+4. [alx.scaleui](#alxscaleui) - Make the patching window automatically adjust Zoom according to the window size. Includes different approaches. 
 5. [alx.multislider](#alxmultislider) - A modified and customizable version of Max's multislider object.
 
 # alx.ksync
