@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 246.0, 88.0, 968.0, 781.0 ],
+        "rect": [ 245.0, 88.0, 995.0, 781.0 ],
         "toolbarvisible": 0,
         "showontab": 1,
         "boxes": [
@@ -40,31 +40,32 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 206.0, 674.0, 133.0, 24.0 ],
+                    "patching_rect": [ 206.0, 654.0, 133.0, 24.0 ],
                     "text": "Turn up the volume"
                 }
             },
             {
                 "box": {
                     "id": "obj-35",
-                    "linecount": 6,
+                    "linecount": 5,
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 577.0, 282.0, 379.0, 89.0 ],
-                    "text": " Arguments:\n#1 - parts - (int) amount of offset values\n#2 - minGap - (ms) minimum gap between consecutive offset values\n#3 - maxGap - (ms) maximim gap between consecutive offset values\n#4 - offsetSum - (ms) the sum total of offsets, a.k.a the number being partitioned."
+                    "patching_rect": [ 574.0, 282.0, 417.0, 75.0 ],
+                    "text": " Arguments:\n#1 - partitionSum -  the number being partitioned (the sum of the parts)\n#2 - parts - the amount of integers the partition should consist of.\n#3 - minGap - minimum variance between consecutive parts in the partition\n#4 - maxGap - maximim variance between consecutive parts in the partition"
                 }
             },
             {
                 "box": {
                     "bubble": 1,
                     "bubble_bgcolor": [ 0.403921568627451, 0.5647058823529412, 0.9450980392156862, 1.0 ],
+                    "bubblepoint": 0.73,
                     "id": "obj-26",
                     "linecount": 6,
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 741.0, 61.5, 216.0, 93.0 ],
+                    "patching_rect": [ 741.0, 28.0, 216.0, 93.0 ],
                     "text": "Integer partitons are methods for writing a number as a sum of integers. For instance, the number 4 can be partioned in five distinct ways, namly as 4, 3+1, 2+2, 2+1+1 or 1+1+1+1. ",
                     "textcolor": [ 1.0, 1.0, 1.0, 1.0 ]
                 }
@@ -73,11 +74,12 @@
                 "box": {
                     "bubble": 1,
                     "id": "obj-24",
+                    "linecount": 2,
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 541.0, 171.0, 160.0, 24.0 ],
-                    "text": "Try some beat partitions."
+                    "patching_rect": [ 543.0, 168.0, 236.0, 38.0 ],
+                    "text": "Try some beat partitions to offset the groove and make it more groovey."
                 }
             },
             {
@@ -88,8 +90,8 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 10.0, 76.0, 724.0, 64.0 ],
-                    "text": "Generate unique K-restricted integer partitions on demand (list of ints). Designed for offsetting beat onsets and micro-rhythms in groove research, but it can be used for anything. Each integer partition is randomized, and it is possible to specify the minimum and maximum gap between consecutive values in the output result that make up the partition (#1 and #2). By default, the integers are both positive and negative, but you can set it to positive values only (@positive_only 1). "
+                    "patching_rect": [ 10.0, 76.0, 726.0, 64.0 ],
+                    "text": "Generate unique K-restricted integer partitions on demand (list of ints). Designed for offsetting beat onsets and micro-rhythms in groove research, but it can be used for anything. Each integer partition is randomized, and it is possible to specify the minimum and maximum gap between consecutive values in the output result that make up the partition (#3 and #4). By default, the integers are both positive and negative, but you can set it to positive values only (@positive_only 1)."
                 }
             },
             {
@@ -122,7 +124,7 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "float", "bang" ],
-                    "patching_rect": [ 671.0, 669.0, 147.0, 22.0 ],
+                    "patching_rect": [ 671.0, 699.0, 147.0, 22.0 ],
                     "text": "buffer~ tom tom.wav 1000"
                 }
             },
@@ -135,7 +137,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 716.0, 205.0, 50.0, 22.0 ]
+                    "patching_rect": [ 716.0, 215.0, 50.0, 22.0 ]
                 }
             },
             {
@@ -147,7 +149,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 659.0, 205.0, 50.0, 22.0 ]
+                    "patching_rect": [ 659.0, 215.0, 50.0, 22.0 ]
                 }
             },
             {
@@ -159,7 +161,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 602.0, 205.0, 50.0, 22.0 ]
+                    "patching_rect": [ 602.0, 215.0, 50.0, 22.0 ]
                 }
             },
             {
@@ -171,7 +173,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 547.0, 205.0, 50.0, 22.0 ]
+                    "patching_rect": [ 547.0, 215.0, 50.0, 22.0 ]
                 }
             },
             {
@@ -256,7 +258,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 64.0, 206.0, 153.0, 22.0 ]
+                    "patching_rect": [ 66.0, 211.0, 153.0, 22.0 ]
                 }
             },
             {
@@ -343,8 +345,8 @@
                     "numinlets": 5,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 487.0, 246.0, 214.0, 22.0 ],
-                    "text": "pack getPartition 4 10 50 150"
+                    "patching_rect": [ 487.0, 246.0, 165.0, 22.0 ],
+                    "text": "pack getPartition 150 4 10 50"
                 }
             },
             {
@@ -573,8 +575,8 @@
                             }
                         ]
                     },
-                    "patching_rect": [ 487.0, 526.0, 93.0, 22.0 ],
-                    "text": "p ms_to_samps"
+                    "patching_rect": [ 487.0, 526.0, 140.0, 22.0 ],
+                    "text": "p miliseconds_to_samps"
                 }
             },
             {
@@ -684,7 +686,7 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "float", "bang" ],
-                    "patching_rect": [ 671.0, 635.0, 137.0, 22.0 ],
+                    "patching_rect": [ 671.0, 665.0, 137.0, 22.0 ],
                     "text": "buffer~ snare snare.wav"
                 }
             },
@@ -695,7 +697,7 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "float", "bang" ],
-                    "patching_rect": [ 671.0, 605.0, 119.0, 22.0 ],
+                    "patching_rect": [ 671.0, 635.0, 119.0, 22.0 ],
                     "text": "buffer~ kick kick.wav"
                 }
             },
@@ -738,7 +740,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 671.0, 546.0, 86.0, 20.0 ],
+                    "patching_rect": [ 671.0, 576.0, 86.0, 20.0 ],
                     "text": "drum sounds"
                 }
             },
@@ -749,7 +751,7 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "float", "bang" ],
-                    "patching_rect": [ 671.0, 573.0, 104.0, 22.0 ],
+                    "patching_rect": [ 671.0, 603.0, 104.0, 22.0 ],
                     "text": "buffer~ hh hh.wav"
                 }
             },
@@ -924,7 +926,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 0.0, 26.0, 968.0, 755.0 ],
+                        "rect": [ 0.0, 26.0, 995.0, 755.0 ],
                         "showontab": 1,
                         "boxes": [
                             {
@@ -2308,7 +2310,7 @@
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
                                                     "patching_rect": [ 140.0, 344.0, 310.0, 22.0 ],
-                                                    "text": "setvalue 4 prob 0. 1. 1. 1. 1. 0. 0. 1. 0. 1. 0. 1. 1. 0. 0. 0."
+                                                    "text": "setvalue 4 prob 1. 0. 1. 0. 0. 0. 1. 0. 1. 0. 1. 0. 0. 0. 0. 0."
                                                 }
                                             },
                                             {
@@ -2599,8 +2601,8 @@
                                     "numinlets": 5,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 393.0, 209.0, 164.0, 22.0 ],
-                                    "text": "pack getPartition 16 2 10 30"
+                                    "patching_rect": [ 393.0, 209.0, 160.0, 22.0 ],
+                                    "text": "pack getPartition 30 16 2 10"
                                 }
                             },
                             {
@@ -2894,7 +2896,7 @@
                             }
                         ]
                     },
-                    "patching_rect": [ 586.0, 636.0, 53.0, 22.0 ],
+                    "patching_rect": [ 586.0, 666.0, 53.0, 22.0 ],
                     "text": "p Binary"
                 }
             },
@@ -2915,7 +2917,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 0.0, 26.0, 968.0, 755.0 ],
+                        "rect": [ 0.0, 26.0, 995.0, 755.0 ],
                         "showontab": 1,
                         "boxes": [
                             {
@@ -3079,7 +3081,7 @@
                                     "numinlets": 0,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 410.0, 213.0, 75.0, 22.0 ],
+                                    "patching_rect": [ 445.0, 210.0, 75.0, 22.0 ],
                                     "text": "r subdivision"
                                 }
                             },
@@ -4168,8 +4170,8 @@
                                     "numinlets": 5,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 372.0, 247.0, 169.230770945549, 22.0 ],
-                                    "text": "pack getPartition 16 4 10 100"
+                                    "patching_rect": [ 372.0, 247.0, 165.0, 22.0 ],
+                                    "text": "pack getPartition 100 16 4 10"
                                 }
                             },
                             {
@@ -4456,7 +4458,7 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-19", 1 ],
+                                    "destination": [ "obj-19", 2 ],
                                     "source": [ "obj-95", 0 ]
                                 }
                             },
@@ -4474,7 +4476,7 @@
                             }
                         ]
                     },
-                    "patching_rect": [ 567.0, 609.0, 75.0, 22.0 ],
+                    "patching_rect": [ 567.0, 639.0, 75.0, 22.0 ],
                     "text": "p Probability"
                 }
             },
@@ -4492,7 +4494,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 559.0, 149.0, 20.0, 20.0 ],
+                    "patching_rect": [ 561.0, 144.0, 20.0, 20.0 ],
                     "rounded": 60.0,
                     "saved_attribute_attributes": {
                         "bgcolor": {
@@ -4517,7 +4519,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 222.0, 652.0, 20.0, 20.0 ],
+                    "patching_rect": [ 222.0, 632.0, 20.0, 20.0 ],
                     "rounded": 60.0,
                     "saved_attribute_attributes": {
                         "bgcolor": {
