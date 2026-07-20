@@ -7,7 +7,7 @@
 
 # alx.partition
 
-Generate unique K-restricted integer partitions on demand (list of ints). Designed for offsetting beat onsets and micro-rhythms in groove research, but it can be used for anything. Each integer partition is randomized, and it is possible to specify the minimum and maximum gap between consecutive values in the output result that make up the partition (#3 and #4). By default, the integers are both positive and negative, but you can set it to positive values only (@positive_only 1).
+Generate unique K-restricted integer partitions on demand (list of ints). Designed for offsetting beat onsets and micro-rhythms in groove research, but it can be used for anything. Each integer partition is randomized, and it is possible to specify the minimum and maximum gap between consecutive parts that make up the partition (#3 and #4). By default, the integers are both positive and negative, but you can set it to positive values only (@positive_only 1).
 
 For example, with the message "getPartition 200 4 10 150", you get 4 individual offset values that together add up to 200, with consecutive values a minimum of 10 apart and a maximum of 150 apart.
 
