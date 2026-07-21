@@ -1,3 +1,5 @@
+# Table of Contents
+
 1. [alx.partition](#alxpartition) - Generate unique K-restricted integer partitions on demand.
 2. [alx.ksync](#alxksync) - Synchronize an abritrary number of oscillators using the Kuramoto model (With Max' multi-channels support)
 2. [alx.gl.spectral](#alxglspectral) - Print real-time motiongrams (spectral mean images) using openGL jitter. Both CPU and GPU versions included.
@@ -6,6 +8,8 @@
 5. [alx.multislider](#alxmultislider) - A modified and customizable version of Max's multislider object.
 
 # alx.partition
+
+**Type:** Abstraction
 
 Generate unique K-restricted integer partitions on demand (list of ints). Designed for offsetting beat onsets and micro-rhythms in groove research, but it can be used for anything. Each integer partition is randomized, and it is possible to specify the minimum and maximum gap between consecutive parts that make up the partition (#3 and #4). By default, the integers are both positive and negative, but you can set it to positive values only (@positive_only 1).
 
