@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 245.0, 88.0, 995.0, 781.0 ],
+        "rect": [ 3011.0, 393.0, 995.0, 781.0 ],
         "toolbarvisible": 0,
         "showontab": 1,
         "boxes": [
@@ -2310,7 +2310,7 @@
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
                                                     "patching_rect": [ 140.0, 344.0, 310.0, 22.0 ],
-                                                    "text": "setvalue 4 prob 1. 0. 1. 0. 0. 0. 1. 0. 1. 0. 1. 0. 0. 0. 0. 0."
+                                                    "text": "setvalue 4 prob 0. 0. 1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1."
                                                 }
                                             },
                                             {

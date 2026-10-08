@@ -46,6 +46,7 @@ function findSignedPartition(parts, minGap, maxGap, offsetSum) {
   }
 
   function dfs(index, remainingAbsSum, prev, path) {
+    // recursive deep search!
     if (result !== null) return;
     if (index === parts) {
       if (remainingAbsSum === 0) {
